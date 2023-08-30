@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="phone.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        
+        <nav id="navbar">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <!-- <i class="fa fa-times" ></i> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="syllabus.html">SYLLABUS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="primary-heading">Cont<span>act</span> Us</h1>
+    <div id="new">
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.7186231772057!2d88.22190530584584!3d22.136701427500217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a025eca5413f925%3A0x68c11819185b2bd8!2z4Kaw4Ka-4Kau4KaV4Ka_4Ka24KeL4Kaw4Kaq4KeB4KawIOCmsOCmvuCmp-CmvuCmqOCml-CmsCDgprngpr7gpocg4Ka44KeN4KaV4KeB4KayICjgpongpoMg4Kau4Ka-4KaDKQ!5e0!3m2!1sbn!2sin!4v1693331342139!5m2!1sbn!2sin"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Radhanagar,Kulpi,South 24 Parganas</h5>
+                    <p>South 24 Parganas,West Bengal,743332</p>
+                </span>
+           
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 9382618820</h5>
+                    <p>Everyday , 10AM to 5PM</p>
+                </span>
+            
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>snikdhendu@gmail.com</h5>
+                    <p>Email us with your suggestion</p>
+                </span>
+            </div>
+            <div class="contact-col">
+                <div class="newcontact-col">    
+                <form action="backend.php">
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="email" placeholder="Enter your Email address" required>
+                    <input type="text" placeholder="Enter your Address" required>
+                    <input type="text" placeholder="Enter your Contact no" required>
+                    <textarea  rows="8" placeholder="Enter your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                </div>
+            </div>
+    </div>
+</div>
+   
+</section>
+    
+    <!-- navbar javascript for toggle menu -->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.R.H.S</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="phone.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+
+
+<body>
+   
+    <section class="header">
+        <nav id="navbar">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <!-- <i class="fa fa-times" ></i> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="syllabus.html">SYLLABUS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to Ramkishorepur Radhanagar High School</h1>
+            <h3>From where the dream of the middle class begins</h3>
+            <p>Established in 1947,Ramkishore Pur Radhanagar High School is a <br>
+            rural institution in South 24 Parganas, West Bengal, India. Providing moderate-level <br>
+            education up to higher secondary level, the school fosters learning and cultural activities.<br>
+            Despite its modest status, it's a hub for community engagement, symbolizing the transformative <br>
+            potential of education in the region.
+            </p>
+            <a href="contact_us.html"  class="btn">Visit Us to Know More</a>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="primary-heading">Ab<span>out</span> us</h1>
+<div class="text">
+        <div class="about_text">
+            <p>
+
+                Welcome to Ramkishore Pur Radhanagar High School, a distinguished institution nestled in the heart of South 24 Parganas.
+                Established in the year <span><b>1947</b></span>, our school has embarked on a journey of academic <span><b>brilliance and holistic development</b></span>.
+                Our team of 12 dedicated and experienced faculties serves as the cornerstone of our educational philosophy. 
+                With a student-teacher ratio of 59:1, we ensure that every student receives personalized attention and guidance, fostering an 
+                environment where learning knows no bounds.
+                At Ramkishore Pur Radhanagar High School, we believe in the power of language, 
+                with Bengali as the primary medium of instruction. From classes <span><b>6 to 12</b></span> ,
+                 our curriculum caters to a wide spectrum of students, nurturing their intellectual growth and curiosity.
+                Our institution thrives with a vibrant student community of approximately 708 individuals, 
+                each contributing to the richness of our educational tapestry. Our well-stocked library, boasting a 
+                collection of 500 books, provides a gateway to endless knowledge and exploration.
+                Academic excellence is our hallmark, reflected in our exceptional results.
+                 A remarkable <span><b>100% qualification rate</b></span> in examinations, coupled with a noteworthy 
+                 20% of students achieving the highest grades, underscores our commitment to scholastic achievement.
+                Beyond academics, we embrace the holistic development of our students, 
+                nurturing their talents and passions through a variety of <span><b>extracurricular activities</b></span> .
+                 We envision graduates who are not only academically adept but 
+                also well-rounded individuals ready to face the challenges of the modern world.
+                Join us at Ramkishore Pur Radhanagar High School as we continue to shape futures, ignite minds, and create a legacy of 
+                <span><b>educational distinction</b></span>. Experience a nurturing learning environment where every student is empowered to excel, explore, 
+                and evolve.</p>
+        </div>
+        <div class="image-box">
+            <button class="shift-button" onclick="shiftImages(-1)">&#8249;</button>
+            <img src="blueschool.jpg" alt="">
+            <button class="shift-button" onclick="shiftImages(1)">&#8250;</button>
+        </div>
+        <script type="text/javascript">
+            let imageBox = document.querySelector('.image-box');
+            let images = ['blueschool.jpg', 'football.jpg', 'schoolhead.jpeg', 'schoolgrass.jpeg', 'myimage.jpg', 'normalschool.jpg', 'schoolteachers.jpeg'];
+            let currentIndex = 0;
+        
+            function transitionImages() {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateImage();
+            }
+        
+            function updateImage() {
+                imageBox.innerHTML = `
+                    <button class="shift-button" onclick="shiftImages(-1)">&#8249;</button>
+                    <img src="${images[currentIndex]}" alt="">
+                    <button class="shift-button" onclick="shiftImages(1)">&#8250;</button>
+                `;
+            }
+        
+            function shiftImages(direction) {
+                currentIndex = (currentIndex + direction + images.length) % images.length;
+                updateImage();
+            }
+        
+            setInterval(transitionImages, 4000); 
+        </script>
+<!--events section -->
+<section id="event">
+    <h1 class="primary-heading">Ev<span>en</span>ts</h1>
+    <div id="submain">
+        <div class="events-box">
+            <img src="images3/new/footballtournament.jpg" alt="">
+            <div class="layer">
+                <h3>Football Match</h3>
+            </div>
+            
+        </div>
+        <div class="events-box">
+            <img src="images3/vollyball.jpg" alt="">
+            <div class="layer">
+                <h3>Volleyball Match</h3>
+            </div>
+            
+        </div>
+        <div class="events-box">
+            <img src="images3/race.jpg" alt="">
+            <div class="layer">
+                <h3>100-meter sprint</h3>
+            </div>
+        </div>
+        <div class="events-box">
+            <img src="images3/teachersday.jpeg" alt="">
+            <div class="layer">
+                <h3>Teacher's Day</h3>
+            </div>
+        </div>
+        <div class="events-box">
+            <img src="images3/independenceday.jpeg" alt="">
+            <div class="layer">
+                <h3>Independence Day</h3>
+            </div>
+        </div>
+        <div class="events-box">
+            <img src="images3/go as you like.jpg" alt="">
+            <div class="layer">
+                <h3>Go As You Like</h3>
+            </div>
+        </div>
+     
+    </div>
+    
+<!-- syllabus section    -->
+<section id="syllabus">
+    <h1 class="primary-heading">Sy<span>lla</span>bus</h1>
+    <div id="subheading">
+        <div class="events-box">
+            <img src="images3/new/fivesix.jpeg" alt="">
+            <div class="syllabustext">
+                <h3>5-8 Syllabus</h3>
+                <p>
+                    The West Bengal government school syllabus for grades 5 to 8 covers key subjects like Mathematics, Science, 
+                    Social Studies, and Languages It integrates academic essentials with the state's cultural 
+                    context, ensuring students receive a comprehensive education.
+                </p>
+                <div class="sublayer">
+                    <a href="">click here to download</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="events-box">
+            <img src="images3/new/kannyashree.jpeg" alt="">
+            <div class="syllabustext">
+                <h3>9-10 Syllabus</h3>
+                <p>
+                    The West Bengal government school 9-10 syllabus covers subjects like Mathematics, Science, Languages, and optional topics. It aims to offer
+                     a balanced education with theoretical insights and practical applications, preparing students for higher studies and beyond.
+                </p>
+                <div class="sublayer">
+                    <a href="">click here to download</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="events-box">
+            <img src="images3/new/all.jpg ">
+            <div class="syllabustext">
+                <h3>11-12 Syllabus</h3>
+                <p>
+                  
+The West Bengal government school 11-12 syllabus offers a diverse curriculum spanning math, science, humanities, and local culture. It strives to
+ equip students with critical thinking and a holistic understanding, setting the foundation for higher education and personal growth.
+                </p>
+                <div class="sublayer">
+                    <a href="pdf/19.2 233.InfixToPostfixC.pdf">click here to download</a>
+                </div>
+            </div>
+        </div>
+   </div>     
+
+</section>
+<!-- galaery section -->
+<section id="gallery">
+    <h1 class="primary-heading">Ga<span>lle</span>ry</h1>
+    
+    <div class="fullimg" id="full_imgbox">
+        <img src="images3/football.jpg" id="full_img">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images3/new/tournament.jpg" onclick="openFullImg(this.src)">
+        <img src="images3/new/function.jpeg" onclick="openFullImg(this.src)">
+        <img src="images3/new/magagin.jpeg" onclick="openFullImg(this.src)">
+        <img src="images3/new/teachersp.jpeg" onclick="openFullImg(this.src)">
+        <img src="images3/new/ma.jpeg" onclick="openFullImg(this.src)">
+        <img src="images3/new/tour.jpg" onclick="openFullImg(this.src)">
+        <img src="images3/new/treeplantation.jpg" onclick="openFullImg(this.src)">
+        <img src="images3/new/vaccination.jpeg" onclick="openFullImg(this.src)">
+
+
+    </div>
+</section>
+<section id="contact">
+    <h1 class="primary-heading">Cont<span>act</span> Us</h1>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.7186231772057!2d88.22190530584584!3d22.136701427500217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a025eca5413f925%3A0x68c11819185b2bd8!2z4Kaw4Ka-4Kau4KaV4Ka_4Ka24KeL4Kaw4Kaq4KeB4KawIOCmsOCmvuCmp-CmvuCmqOCml-CmsCDgprngpr7gpocg4Ka44KeN4KaV4KeB4KayICjgpongpoMg4Kau4Ka-4KaDKQ!5e0!3m2!1sbn!2sin!4v1693331342139!5m2!1sbn!2sin"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+<section class="contact-us">
+    <div class="row">
+        
+        <div class="contact-col">
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Radhanagar,Kulpi,South 24 Parganas</h5>
+                <p>South 24 Parganas,West Bengal,743332</p>
+            </span>
+       
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+91 9382618820</h5>
+                <p>Everyday , 10AM to 5PM</p>
+            </span>
+        
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>snikdhendu@gmail.com</h5>
+                <p>Email us with your suggestion</p>
+            </span>
+        </div>
+   
+        <div class="contact-col">
+            <div class="newcontact-col">    
+            <form action="backend.php">
+                <input type="text" placeholder="Enter your Name" required>
+                <input type="email" placeholder="Enter your Email address" required>
+                <input type="text" placeholder="Enter your Address" required>
+                <input type="text" placeholder="Enter your Contact no" required>
+                <textarea  rows="8" placeholder="Enter your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            </div>
+        </div>
+</div>
+</section>
+</section>
+
+
+<footer>
+    <div class="footercontainer">
+        <div class="socalicons">
+            <a href="https://m.facebook.com/profile.php/?id=100089578832870&name=xhp_nt__fblite__profile__tab_bar&profile_tab_item_selected=mentions"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/snikdhendu"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/snikdhendu-pramanik/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023 :Created by Snikdhendu with <i class="fa fa-heart-o"></i> </p>
+        </div>
+    </div>
+</footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- this is for gallery -->
+<script>
+var full_imgbox=document.getElementById("full_imgbox")
+var full_img=document.getElementById("full_img")
+function openFullImg(pic){
+    full_imgbox.style.display="flex";
+    full_img.src=pic;
+
+}
+function closeFullImg(){
+    full_imgbox.style.display="none";
+
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- navbar javascript for toggle menu -->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+
+
+
+</body>
+</html>

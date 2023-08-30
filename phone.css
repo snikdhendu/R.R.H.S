@@ -1,0 +1,186 @@
+/* navbar settings for phone */
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: fixed;
+    background:tomato;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    right: 20;
+    text-align: left;
+    z-index:2;
+    transition: 1s;
+    
+}
+nav .fa{
+    display: block;
+    color: aliceblue;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    /* position: relative; */
+}
+.nav-links ul{
+    padding: 30px;
+    
+    
+}
+/* Evenets section settings */
+#event h1{
+    font-size: 56px;
+}
+.text{
+    margin-top: -49px;
+    text-align: center;
+    justify-content: center;
+}
+.text-box p{
+    font-size: 16px;
+}
+.text{
+    justify-content: center;
+}
+.about_text{
+    width: 295px;
+    height: 425px;
+    margin-right: 42px;
+}
+.about_text p{
+    color: brown;
+    font-size: 10px;
+}
+.about_text{
+    padding: 33px;
+    padding-bottom: 63px;
+    
+}
+.image-box{
+    width: 352px;
+    height: 400px;
+    margin-left: 4px;
+
+}
+#about{
+    justify-content: center;
+    text-align: center;
+}
+.primary-heading{
+    font-size: 62px;
+}
+#submain .events-box{
+    
+    width: 330px;
+    justify-content: center;
+    background-size: cover;
+    /* margin-left: 100px; */
+}
+/* .events-box img{
+  
+    
+} */
+
+#submain {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-box {
+    flex-basis: 90%;
+}
+#subheading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#subheading .events-box{
+    
+    width: 363px;
+    justify-content: center;
+    background-size: cover;
+    /* margin-left: 100px; */
+}
+.events-box img{
+    height: 296px;
+    width: 331px;
+}
+/* Contact section settings */
+.location{
+    height: 280px;
+    width: 331px;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-left: 53px;
+    margin-top: 137px;
+}
+
+.newcontact-col{
+    margin-top: -103px;
+}
+.contact-col input,.contact-col textarea{
+    width: 139%;
+    margin-left: -9px;
+}
+.contact-col .btn{
+    margin-left: 35px;
+    /* color: red; */
+}
+
+
+/* various subsection setting in phone */
+.sub-header{
+    height: 35vh;
+}
+.sub-header .about_text{
+    margin-top: 157px;
+    margin-left: 44px;
+    padding: 9px;
+
+     /* margin-bottom: 40px;*/
+} 
+.sub-header .image-box {
+    margin-top: 82px;
+    margin-bottom: 40px;
+    margin-right: 3px;
+}
+/* event-section */
+.sub-header #submain {
+    margin-top: 29px;
+   
+}
+.sub-header .img-gallery {
+    margin-top: 135px;
+    /* margin-left: 55px; */
+    align-items: center;
+    justify-content: center;
+}
+.fullimg {
+    width: 96%;
+}
+.upparrowdiv {
+   
+    top: 85%; /* Position vertically in the middle of the footer container */
+    
+   
+}
+.footerbottom p{
+    color:  rgb(2, 52, 59);
+    font-size: 17px;
+}
+.socalicons a{
+  
+    font-size: 10px;
+}
+.location{
+    margin-top: 29px;
+}
